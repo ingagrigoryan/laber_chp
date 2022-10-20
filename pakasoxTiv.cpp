@@ -2,7 +2,7 @@
 using namespace std; 
  
 int main() { 
-    int n, s1 = 1, s2 = 1, i, res; 
+    int n, a1 = 1, a2 = 1, i, result; 
     cin >> n; 
     int a[n]; 
     for(i = 0; i < n; i++){ 
@@ -10,14 +10,14 @@ int main() {
     } 
     i = 0; 
     while(i < n){ 
-        s1 = s1 * a[i]; 
+        a1 = a1 * a[i]; 
         i++; 
     } 
     i = 1; 
     while(i <= n + 1){ 
-        s2 = s2 * i; 
+        a2 = a2 * i; 
         i++; 
     } 
-    res = s2 / s1; 
-    cout << "Pakasox tarry: " << res; 
+    result = a2 / a1; 
+    cout << "Pakasox tarry: " << result; 
 }
